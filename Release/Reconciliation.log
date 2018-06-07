@@ -1,0 +1,10 @@
+﻿  main.cpp
+c:\users\la185067\source\repos\reconciliation\main.cpp(187): warning C4018: '>=': signed/unsigned mismatch
+c:\users\la185067\source\repos\reconciliation\main.cpp(200): warning C4018: '<': signed/unsigned mismatch
+c:\users\la185067\source\repos\reconciliation\main.cpp(204): warning C4018: '<': signed/unsigned mismatch
+c:\users\la185067\source\repos\reconciliation\main.cpp(170): warning C4101: 'indexOfMrId': unreferenced local variable
+c:\users\la185067\source\repos\reconciliation\main.cpp(166): warning C4101: 'AmountFromArr': unreferenced local variable
+  Generating code
+  All 293 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Reconciliation.vcxproj -> c:\users\la185067\source\repos\Reconciliation\Release\Reconciliation.exe

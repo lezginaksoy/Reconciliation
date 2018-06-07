@@ -1,0 +1,6 @@
+transactionId, merchantTransactionId, state, amount
+107,501,SUCCESS,300.00
+-1,502,SUCCESS,200.00
+109,504,FAILED,300.00
+-1,506,PENDING,405.00
+111,507,SUCCESS,412.00

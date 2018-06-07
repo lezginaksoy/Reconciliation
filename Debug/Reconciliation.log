@@ -1,0 +1,7 @@
+﻿  main.cpp
+c:\users\la185067\source\repos\reconciliation\main.cpp(190): warning C4018: '<=': signed/unsigned mismatch
+c:\users\la185067\source\repos\reconciliation\main.cpp(209): warning C4018: '<': signed/unsigned mismatch
+c:\users\la185067\source\repos\reconciliation\main.cpp(213): warning C4018: '<': signed/unsigned mismatch
+c:\users\la185067\source\repos\reconciliation\main.cpp(181): warning C4101: 'indexOfMrId': unreferenced local variable
+c:\users\la185067\source\repos\reconciliation\main.cpp(177): warning C4101: 'AmountFromArr': unreferenced local variable
+  Reconciliation.vcxproj -> c:\users\la185067\source\repos\Reconciliation\Debug\Reconciliation.exe

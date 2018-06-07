@@ -1,0 +1,5 @@
+merchantTransactionId, state, amount
+401,SUCCESS,100.00
+402,FAILED,88.44
+403,PENDING,332.22
+404,FAILED,77.12

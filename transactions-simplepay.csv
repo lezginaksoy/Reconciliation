@@ -1,0 +1,4 @@
+transactionId,amount,state
+102,,SUCCESS,3.99
+105,,FAILED,4.44
+106,,PENDING,55.00
