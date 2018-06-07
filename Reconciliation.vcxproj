@@ -116,13 +116,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="transactions-harderpay.csv" />
     <None Include="transactions-ppro.csv" />
     <None Include="transactions-simplepay.csv" />
     <None Include="transactions-simplerpay.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Reconciliation.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Reconciliation.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

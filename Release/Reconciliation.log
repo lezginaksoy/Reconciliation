@@ -1,10 +1,11 @@
-﻿  main.cpp
-c:\users\la185067\source\repos\reconciliation\main.cpp(187): warning C4018: '>=': signed/unsigned mismatch
-c:\users\la185067\source\repos\reconciliation\main.cpp(200): warning C4018: '<': signed/unsigned mismatch
-c:\users\la185067\source\repos\reconciliation\main.cpp(204): warning C4018: '<': signed/unsigned mismatch
-c:\users\la185067\source\repos\reconciliation\main.cpp(170): warning C4101: 'indexOfMrId': unreferenced local variable
-c:\users\la185067\source\repos\reconciliation\main.cpp(166): warning C4101: 'AmountFromArr': unreferenced local variable
+﻿  Reconciliation.cpp
+c:\users\la185067\projects\reconciliation\reconciliation.cpp(8): warning C4101: 'a': unreferenced local variable
+c:\users\la185067\projects\reconciliation\reconciliation.cpp(109): warning C4018: '>=': signed/unsigned mismatch
+c:\users\la185067\projects\reconciliation\reconciliation.cpp(128): warning C4018: '<': signed/unsigned mismatch
+c:\users\la185067\projects\reconciliation\reconciliation.cpp(132): warning C4018: '<': signed/unsigned mismatch
   Generating code
-  All 293 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  1 of 302 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  Reconciliation.vcxproj -> c:\users\la185067\source\repos\Reconciliation\Release\Reconciliation.exe
+  Reconciliation.vcxproj -> C:\Users\la185067\Projects\Reconciliation\Release\Reconciliation.exe
