@@ -5,24 +5,23 @@ Reconciliation _Reconciliation;
 
 Reconciliation::Reconciliation()
 {
-	int a;
 }
 
 int main(void)
 {
 	static double Data[FileCount][ValueCount];
 	
-	clock_t start, stop;
-	start = clock();
+	//clock_t start, stop;
+	//start = clock();
 
 	int Ret = _Reconciliation.StartLoadAndParse(Data);
 
 	if (Ret == 1)
 		_Reconciliation.Output(Data);
 
-	stop = clock();
+	/*stop = clock();
 	printf("Elapsed time: %f\n", (float)(stop - start) / CLOCKS_PER_SEC);
-
+*/
 
 	return Ret;
 
@@ -105,15 +104,15 @@ void Reconciliation::CheckTransationFile(string TxnId, string MrTxnId, string St
 		getline(ip, ToLine);
 		std::vector<std::string> ToArr = SplitLine(ToLine, ',');
 
-		int indexFound = std::find(ToArr.begin(), ToArr.end(), TxnId) - ToArr.begin();
-		if (indexFound >= ToArr.size())//if TransactionId not find try find merchantTransactionId
-			indexFound = std::find(ToArr.begin(), ToArr.end(), MrTxnId) - ToArr.begin();
+		int indexFound =int(std::find(ToArr.begin(), ToArr.end(), TxnId) - ToArr.begin());
+		if (indexFound >= (int)ToArr.size())//if TransactionId not find try find merchantTransactionId
+			indexFound = int( std::find(ToArr.begin(), ToArr.end(), MrTxnId) - ToArr.begin());
 
 		//find amuount and state values in line
 		for (size_t i = 0; i < ToArr.size(); i++)
 		{
 			if (IsDouble(ToArr[i]))
-				indexOfAmount = i;
+				indexOfAmount =int(i);
 			else if (ToArr[i] == SUCCESS || ToArr[i] == FAILED || ToArr[i] == PENDING)
 				indexOfState = i;
 		}
@@ -125,11 +124,11 @@ void Reconciliation::CheckTransationFile(string TxnId, string MrTxnId, string St
 		}
 
 
-		if (indexFound < ToArr.size())//transaction or merchantid is matched
+		if (indexFound < (int)ToArr.size())//transaction or merchantid is matched
 		{
 			//check state,and calculate matchedcount and matchedvolume
 			indexFound = std::find(ToArr.begin(), ToArr.end(), State) - ToArr.begin();
-			if (indexFound < ToArr.size())
+			if (indexFound < (int)ToArr.size())
 			{
 				Data[PproIndex][MatchedCountIn] += 1;
 				Data[FileIndex][MatchedCountIn] += 1;
